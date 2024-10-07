@@ -35,8 +35,8 @@
       "height": 500,
       "projection": {"type": "identity", "clipAngle": 200, "reflectY": true},
       "layer": [
-        {
-          "data": {
+        
+          {"data": {
             "url": "https://raw.githubusercontent.com/Maitrey0152/FIT3179_week10_homework/refs/heads/main/topojson/melbourne.topojson",
             "format": {"type": "topojson", "feature": "collection"}
           },
@@ -109,6 +109,7 @@
               }
             }
           ],
+          
           "mark": {"type": "geoshape", "stroke": "#212121", "strokeWidth": 1},
           "encoding": {
             "color": {
@@ -133,6 +134,7 @@
             ]
           }
         },
+        
         {
           "data": {
             "url": "https://raw.githubusercontent.com/Maitrey0152/FIT3179_week10_homework/refs/heads/main/cafes.csv"
@@ -152,17 +154,18 @@
               {"field": "trading_name", "type": "nominal", "title": "Name"}
             ]
           }
-        },{"mark":{"type": "text",
+        },{"data": {
+            "url": "https://raw.githubusercontent.com/Maitrey0152/FIT3179_week10_homework/refs/heads/main/topojson/melbourne.topojson",
+            "format": {"type": "topojson", "feature": "collection"}
+          },
+          
+          "mark":{"type": "text",
         "align": "left",
-        "dx": 1000,
-        "dy": 0,
-        "fontSize": 12,
-        "fontWeight": "bold"},
-      "encoding": {
-        "text": {
-          "value": "Most Popular Category"
-        }
-      }
+        "dx": 95,
+        "dy": 20,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "text":"Melbourne(3000) has the most restaurants/cafes"}
       }
       ]
     }
