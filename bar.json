@@ -4,7 +4,7 @@
     "width":700,
     "height":400,
 
-    "data":{"url":"filtered_cafe.csv"},
+    "data":{"url":"https://raw.githubusercontent.com/Maitrey0152/FIT3179_HMWK10/refs/heads/main/filtered_cafe.csv?token=GHSAT0AAAAAACYQBMFH2AHF74DJZVOM3INOZYDUTYA"},
     "layer":[{
     "mark": {
       "type": "circle",
